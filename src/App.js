@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React,{useContext} from 'react'
+import classes from './App.module.css';
+import {Helmet} from 'react-helmet';
+import { AppSettingsContext } from './Context/AppSettingsContext';
+import Navbar from './Components/Navbar/Navbar';
+import Board from './Components/Board/Board';
+import Keyboard from './Components/Keyboard/Keyboard';
 
-function App() {
+const App = () => {
+  const appSettings = useContext(AppSettingsContext)
+
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+    <div className={classes['page-settings']}>
+        <div className={classes.content}>
+          <Helmet>
+            <style>{`body { background-color: ${appSettings.backgroundColor}; }`}</style>
+          </Helmet>
+          <Navbar />
+          <Board />
+          <Keyboard />
+        </div>
+
+        <p className={classes['expand-window']} style={{color: `${appSettings.textColor}`}}>
+            Expand your window to use Jordle
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
     </div>
   );
 }

@@ -1,0 +1,45 @@
+.navbar {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    margin-top: 0.5cm;
+}
+
+.left-section {
+    margin: auto 0 auto 1cm;
+}
+
+.middle-section {
+    margin: auto auto;
+}
+
+.middle-section > p {
+    font-size: 4rem;
+    font-family: 'Bebas Neue', cursive;
+    margin: 0;
+}
+
+.right-section {
+    margin: auto 1cm auto auto;
+}
+
+.icons {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.settings-icon {
+    margin-left: 0.4cm;
+}
+
+@media screen and (max-width: 400px) {
+    .middle-section > p {
+        font-size: 2.5rem;
+    }
+    .icons {
+        font-size: 1.2rem;
+    }
+    .settings-icon {
+        margin-left: 0.2cm;
+    }
+
+}

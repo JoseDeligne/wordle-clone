@@ -1,0 +1,27 @@
+.page-settings {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.expand-window {
+    display: none;
+}
+
+@media screen and (max-width: 300px) {
+    .content {
+        display: none;
+    }
+
+    .expand-window {
+        display: flex;
+        height: 90vh;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.4rem;
+        font-family: sans-serif;
+        text-align: center;
+    }
+}

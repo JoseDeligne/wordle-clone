@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-
+import AppSettingsProvider from './Context/AppSettingsContext'
 
 ReactDOM.render(
-  <React.StrictMode>
+  <AppSettingsProvider>
     <App />
-  </React.StrictMode>,
+  </AppSettingsProvider>,
   document.getElementById('root')
 );
 
