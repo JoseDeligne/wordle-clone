@@ -1,7 +1,8 @@
 import React from 'react'
 import classes from './Keyboard.module.css'
+import Key from './Key'
 
-const Keyboard = () => {
+const Keyboard = (props) => {
     const keyboardButtons = 
     [
         ['Q', 'W', 'E', 'R', 'T', 'Y' , 'U', 'I', 'O', 'P'],
@@ -10,8 +11,18 @@ const Keyboard = () => {
     ]
 
     return(
-        <div>
-            keyboard
+        <div className={`${props.className} ${classes.keyboard}`}>
+            {keyboardButtons.map((row, index) => {
+                return(
+                    <div className={classes.row}>
+                        {row.map((key, rowIndex) => {
+                            return(
+                                <Key className={classes['key-settings']} key={`${index}+${rowIndex}`} value={key} />
+                            )
+                        })}
+                    </div>
+                )
+            })}
         </div>
     )
 }

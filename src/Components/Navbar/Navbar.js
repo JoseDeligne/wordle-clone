@@ -4,11 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCog, faCircleQuestion, faBarChart } from '@fortawesome/free-solid-svg-icons'
 import { AppSettingsContext } from '../../Context/AppSettingsContext'
 
-const Navbar = () => {
+const Navbar = (props) => {
     const appSettings = useContext(AppSettingsContext)
 
     return(
-        <div className={classes.navbar} style={{color: `${appSettings.textColor}`}}>
+        <div className={`${props.className} ${classes.navbar}`} style={{color: `${appSettings.textColor}`}}>
             <div className={classes['left-section']}>
                 <FontAwesomeIcon icon={faCircleQuestion} className={`${classes['icons']} ${classes['more-info-icon']}`} />
             </div>

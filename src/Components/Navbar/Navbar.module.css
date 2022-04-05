@@ -1,7 +1,6 @@
 .navbar {
     display: grid;
     grid-template-columns: 33.3% 33.3% 33.3%;
-    margin-top: 0.5cm;
 }
 
 .left-section {

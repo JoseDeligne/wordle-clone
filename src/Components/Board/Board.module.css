@@ -1,10 +1,11 @@
 .board {
     width: 80%;
-    margin: 1cm auto;
+    margin: 0 auto 0 auto;
     display: grid;
-    grid-template-columns: repeat(5, 2.5cm);
-    grid-template-rows: repeat(6, 2.5cm);
+    grid-template-columns: repeat(5, 2cm);
+    grid-template-rows: repeat(6, 2cm);
     justify-content: center;
+    
     gap: 0.3cm;
 }
 

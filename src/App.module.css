@@ -1,13 +1,28 @@
 .page-settings {
-    width: 100vw;
-    height: 100vh;
     overflow-y: hidden;
     overflow-x: hidden;
+}
+
+.content {
+}
+
+.navbar-settings {
+    height: 13vh;
+}
+.board-settings {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.keyboard-settings {
+    height: 27vh;
 }
 
 .expand-window {
     display: none;
 }
+
 
 @media screen and (max-width: 300px) {
     .content {

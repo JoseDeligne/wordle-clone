@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import AppSettingsProvider from './Context/AppSettingsContext'
+import AppDataProvider from './Context/AppDataContext'
 
 ReactDOM.render(
   <AppSettingsProvider>
-    <App />
+    <AppDataProvider>
+      <App />
+    </AppDataProvider>
   </AppSettingsProvider>,
   document.getElementById('root')
 );

@@ -1,0 +1,51 @@
+.key {
+    height: 1.8cm;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.normal-key {
+    width: 1.3cm;
+}
+
+.special-key {
+    width: 2.6cm;
+}
+
+.key > p {
+    font-family: 'Arial', sans-serif;
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 600px) {
+    .key {
+        font-size: 1rem;
+    }
+    .normal-key {
+        width: 1.1cm;
+    }
+    
+    .special-key {
+        width: 2.2cm;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .key {
+        font-size: 0.8rem;
+    }
+    .normal-key {
+        width: 0.9cm;
+    }
+    
+    .special-key {
+        width: 1.8cm;
+    }
+}
